@@ -2,5 +2,5 @@
 
 # Change log
 
-== v1.0.1 == 
-* Remove function and use only global
+== v1.0.2 == 
+* load via "files" not "class"
