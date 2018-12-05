@@ -15,7 +15,7 @@ if ( ! class_exists( 'WP_Country_Database' ) ) {
 	class WP_Country_Database {
 
 
-		public $version = "1.0.0";
+		public $version = "1.0.1";
 		public $db_version = "1.0.0";
 		public $db_version_current;
 		public $db_table;
@@ -298,24 +298,8 @@ if ( ! class_exists( 'WP_Country_Database' ) ) {
 
 
 	}
-
-	/**
-	 * The main function responsible for returning the one true WP_Country_Database
-	 * Instance to functions everywhere.
-	 *
-	 * Use this function like you would a global variable, except without needing
-	 * to declare the global.
-	 *
-	 * Example: <?php $wp_country_database = wp_country_database(); ?>
-	 *
-	 * @since 1.0.0
-	 * @return WP_Country_Database The one true WP_Country_Database Instance
-	 */
-	function wp_country_database() {
-		return WP_Country_Database::instance();
-	}
-
+	
 	global $wp_country_database;
 	// Global for backwards compatibility.
-	$GLOBALS['wp_country_database'] = $wp_country_database = wp_country_database();
+	$GLOBALS['wp_country_database'] = $wp_country_database = WP_Country_Database::instance();
 }
