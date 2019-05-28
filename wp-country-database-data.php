@@ -3,6 +3,7 @@
  * Country data
  *
  * @since 1.0.0.0-dev
+ * @since 1.0.0.3 &#039; replaced to '(single quote).
  */
 $wp_countries = array(
 	array('ID' => '1','name' => 'Afghanistan','slug' => 'afghanistan','alpha2Code' => 'AF','alpha3Code' => 'AFG','callingCodes' => '93','capital' => 'Kabul','region' => 'Asia','subregion' => 'Southern Asia','population' => '27657145','latlng' => '33,65','demonym' => 'Afghan','timezones' => 'UTC+04:30','currency_name' => 'Afghan afghani','currency_code' => 'AFN','currency_symbol' => '؋','flag' => 'https://restcountries.eu/data/afg.svg','address_format' => ''),
